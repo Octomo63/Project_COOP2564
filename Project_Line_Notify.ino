@@ -6,8 +6,6 @@ DHT dht(DHTPIN, DHTTYPE);         // Initialize DHT sensor
 
 #include <TridentTD_LineNotify.h>
 #include <Hash.h>
-#include <ESPAsyncTCP.h>
-#include <ESPAsyncWebServer.h>
 
 #define SSID        "XXXXXXXXXXX"      // บรรทัดที่ 11 ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
 #define PASSWORD    "XXXXXXXXXXX"  // บรรทัดที่ 12 ใส่ รหัส Wifi
