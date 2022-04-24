@@ -143,7 +143,7 @@ void loop()
     LINE.notify("Motion detected!");
     LINE.notify("Humidity: " + String(h) + "%");
     LINE.notify("Temperature(Celsius): " + String(t) + "*C");
-    LINE.notify("Temperature(Fahrenheit): " + String(t) + "*F");
+    LINE.notify("Temperature(Fahrenheit): " + String(f) + "*F");
     LINE.notify("Heat index(Celsius): " + String(hic) + "*C");
     LINE.notify("Heat index(Fahrenheit): " + String(hif) + "*F");
     LINE.notify("Smoke : " + String(s) );
