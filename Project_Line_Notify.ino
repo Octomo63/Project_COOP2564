@@ -7,7 +7,7 @@ DHT dht(DHTPIN, DHTTYPE);         // Initialize DHT sensor
 #include <TridentTD_LineNotify.h>
 #include <Hash.h>
 
-#define SSID        "XXXXXXXXXXX"      // บรรทัดที่ 11 ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
+#define SSID        "XXXXXXXXXXX"      // ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
 #define PASSWORD    "XXXXXXXXXXX"  // ใส่ รหัส Wifi
 #define LINE_TOKEN  "XXXXXXXXXXX"   // ใส่ รหัส TOKEN
 
@@ -97,10 +97,10 @@ void loop()
     LINE.notify("อุณหภูมิผิดปกติ");
     LINE.notify("Humidity: " + String(h) + "%");
     LINE.notify("Temperature(Celsius): " + String(t) + "*C");
-    LINE.notify("Temperature(Fahrenheit): " + String(t) + "*F");
+    LINE.notify("Temperature(Fahrenheit): " + String(f) + "*F");
     LINE.notify("Heat index(Celsius): " + String(hic) + "*C");
     LINE.notify("Heat index(Fahrenheit): " + String(hif) + "*F");
-    LINE.notify("Smoke : " + String(s) + "...");
+    LINE.notify("Smoke : " + String(s) );
     LINE.notify(motions);
     LINE.notifySticker(11538,51626518);          //ส่ง Line Sticker ด้วย PackageID 11538 , StickerID 51626518
     delay(10000);
@@ -113,10 +113,10 @@ void loop()
     LINE.notify("ความชื้นสัมพัทธ์ผิดปกติ");
     LINE.notify("Humidity: " + String(h) + "%");
     LINE.notify("Temperature(Celsius): " + String(t) + "*C");
-    LINE.notify("Temperature(Fahrenheit): " + String(t) + "*F");
+    LINE.notify("Temperature(Fahrenheit): " + String(f) + "*F");
     LINE.notify("Heat index(Celsius): " + String(hic) + "*C");
     LINE.notify("Heat index(Fahrenheit): " + String(hif) + "*F");
-    LINE.notify("Smoke : " + String(s) + "...");
+    LINE.notify("Smoke : " + String(s) );
     LINE.notify(motions);
     LINE.notifySticker(11538,51626522);          //ส่ง Line Sticker ด้วย PackageID 11538 , StickerID 51626522
     delay(10000);
@@ -128,10 +128,10 @@ void loop()
     LINE.notify("Smoke ผิดปกติ");
     LINE.notify("Humidity: " + String(h) + "%");
     LINE.notify("Temperature(Celsius): " + String(t) + "*C");
-    LINE.notify("Temperature(Fahrenheit): " + String(t) + "*F");
+    LINE.notify("Temperature(Fahrenheit): " + String(f) + "*F");
     LINE.notify("Heat index(Celsius): " + String(hic) + "*C");
     LINE.notify("Heat index(Fahrenheit): " + String(hif) + "*F");
-    LINE.notify("Smoke : " + String(s) + "...");
+    LINE.notify("Smoke : " + String(s) );
     LINE.notify(motions);
     LINE.notifySticker(11538,51626523);          //ส่ง Line Sticker ด้วย PackageID 11538 , StickerID 51626523
     delay(10000);
@@ -146,7 +146,7 @@ void loop()
     LINE.notify("Temperature(Fahrenheit): " + String(t) + "*F");
     LINE.notify("Heat index(Celsius): " + String(hic) + "*C");
     LINE.notify("Heat index(Fahrenheit): " + String(hif) + "*F");
-    LINE.notify("Smoke : " + String(s) + "...");
+    LINE.notify("Smoke : " + String(s) );
     LINE.notify(motions);
     LINE.notifySticker(1070,17875);          //ส่ง Line Sticker ด้วย PackageID 1070 , StickerID 17875
     delay(10000);
