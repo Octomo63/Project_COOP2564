@@ -8,8 +8,8 @@ DHT dht(DHTPIN, DHTTYPE);         // Initialize DHT sensor
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 
-#define SSID        "XXXXXXXXXX"      // บรรทัดที่ 11 ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
-#define PASSWORD    "XXXXXXXXXX"  // บรรทัดที่ 12 ใส่ รหัส Wifi
+#define SSID        "XXXXXXXXXX"      // ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
+#define PASSWORD    "XXXXXXXXXX"  // ใส่ รหัส Wifi
 
 //--------Smoke----------
 int analogPin = A0; //ประกาศตัวแปร ให้ analogPin
@@ -215,13 +215,6 @@ void loop()
 
   //--------Smoke----------
   s = analogRead(analogPin);  //อ่านค่าสัญญาณ analog 
-
-  if (state == HIGH) {
-    motions = "Motion detected!";
-  }
-  if (state == LOW) {
-    motions = "No motion detected.";
-  }
   
   Serial.print("Humidity: ");
   Serial.print(h);

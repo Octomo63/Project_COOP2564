@@ -8,8 +8,8 @@ DHT dht(DHTPIN, DHTTYPE);         // Initialize DHT sensor
 #include <Hash.h>
 
 #define SSID        "XXXXXXXXXXX"      // บรรทัดที่ 11 ให้ใส่ ชื่อ Wifi ที่จะเชื่อมต่อ
-#define PASSWORD    "XXXXXXXXXXX"  // บรรทัดที่ 12 ใส่ รหัส Wifi
-#define LINE_TOKEN  "XXXXXXXXXXX"   // บรรทัดที่ 13 ใส่ รหัส TOKEN ที่ได้มาจากข้างบน
+#define PASSWORD    "XXXXXXXXXXX"  // ใส่ รหัส Wifi
+#define LINE_TOKEN  "XXXXXXXXXXX"   // ใส่ รหัส TOKEN
 
 //--------Smoke----------
 int analogPin = A0; //ประกาศตัวแปร ให้ analogPin
