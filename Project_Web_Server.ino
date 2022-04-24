@@ -78,7 +78,6 @@ const char index_html[] PROGMEM = R"rawliteral(
     <i class="fas fa-solid fa-smoking" style="color:#A09B9A;"></i>
     <span class="dht-labels">Smoke</span>
     <span id="smoke">%SMOKE%</span>
-    <sup class="units"> %% </sup>
   </p>
 
   <p>
